@@ -1,0 +1,10 @@
+@charset 'UTF-8';
+
+// Main
+@import 'variables';
+@import 'mixins';
+@import 'functions';
+
+// components
+@import 'components/header.scss';
+@import 'components/hero-cards';

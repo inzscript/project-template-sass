@@ -1,0 +1,41 @@
+:root {
+  --color-white: #ffffff;
+  --color-white-60: rgba(255, 255, 255, 0.6);
+  --color-black: #000000;
+  --color-text-gray: #474747;
+  --color-medium-gray: #8C8C8C;
+  --color-accent-gray: #EEEEEE;
+  --color-lightest-gray: #FAFAFA;
+  --color-light-gray: #F5F5F5;
+  --color-green: #24C86F;
+  --color-ada-green: #1DAA5F;
+  --color-accent-green: #20BD68;
+  --color-green-neon: #71FF4E;
+  --color-dark-blue: #00213D;
+  --color-blue: #2A87F7;
+  --color-accent-blue: #4899FA;
+  --color-light-blue: #A3E3FF;
+  --color-yellow: #FFCA0B;
+  --color-red: #FF6C5F;
+  --gradient-green: #24C86F 0%, #43DE62 100%;
+}
+
+.header__heading {
+  font-size: 2em;
+  font-weight: 400;
+  color: var(--color-text-gray);
+}
+
+.hero-cards__heading {
+  color: var(--color-text-gray);
+  font-size: 1.5em;
+}
+.hero-cards__subheading {
+  color: var(--color-medium-gray);
+  font-size: 1.25em;
+}
+.hero-cards__text {
+  color: #454545;
+  font-size: 1em;
+  color: var(--color-blue);
+}/*# sourceMappingURL=main.css.map */

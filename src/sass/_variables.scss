@@ -1,0 +1,83 @@
+:root {
+  --color-white: #ffffff;
+  --color-white-60: rgba(255, 255, 255, 0.6);
+  --color-black: #000000;
+  --color-text-gray: #474747;
+  --color-medium-gray: #8C8C8C;
+  --color-accent-gray: #EEEEEE;
+  --color-lightest-gray: #FAFAFA;
+  --color-light-gray: #F5F5F5;
+  --color-green: #24C86F;
+  --color-ada-green: #1DAA5F;
+  --color-accent-green: #20BD68;
+  --color-green-neon: #71FF4E;
+  --color-dark-blue: #00213D;
+  --color-blue: #2A87F7;
+  --color-accent-blue: #4899FA;
+  --color-light-blue: #A3E3FF;
+  --color-yellow: #FFCA0B;
+  --color-red: #FF6C5F;
+  --gradient-green: #24C86F 0%, #43DE62 100%;
+}
+
+// Colors
+$color-white: var(--color-white);
+$color-white-60: var(--color-white-60);
+$color-black: var(--color-black);
+$color-text-gray: var(--color-text-gray);
+$color-medium-gray: var(--color-medium-gray);
+$color-accent-gray: var(--color-accent-gray);
+$color-lightest-gray: var(--color-lightest-gray);
+$color-light-gray: var(--color-light-gray);
+$color-green: var(--color-green);
+$color-ada-green: var(--color-ada-green);
+$color-accent-green: var(--color-accent-green);
+$color-green-neon: var(--color-green-neon);
+$color-dark-blue: var(--color-dark-blue);
+$color-blue: var(--color-blue);
+$color-accent-blue: var(--color-accent-blue);
+$color-light-blue: var(--color-light-blue);
+$color-yellow: var(--color-yellow);
+$color-red: var(--color-red);
+
+$gradient-green: var(--gradient-green);
+
+// Font weights
+$fw-regular: 400;
+$fw-semibold: 600;
+$fw-bold: 700;
+
+// Fonts
+$ff-sans: neuzeit-grotesk, sans-serif;
+$ff-slab: 'Roboto Slab', serif;
+
+// Stacking
+$z-index-nav: 5;
+
+// Transitions
+$transition-easing: cubic-bezier(0.2, 0.8, 0.4, 1);
+$transition: 0.6s $transition-easing;
+
+// Drop Shadows
+$box-shadow-graphic: rem(4px 4px 30px) rgba(0, 0, 0, 0.1);
+$box-shadow-container: rem(5px 5px 30px 10px) rgba(0, 0, 0, 0.05);
+
+
+// Media query sizes
+$breakpoints: (
+  'base': rem(320px),
+  'tiny': rem(475px),
+  'small': rem(768px),
+  'smedium': rem(1024px),
+  'medium': rem(1280px),
+  'large': rem(1440px),
+  'xlarge': rem(1600px)
+);
+
+$unit-intervals: (
+  'px': 1,
+  'em': .0625,
+  'rem': .0625,
+  '': 0
+);
+

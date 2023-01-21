@@ -1,0 +1,19 @@
+.hero-cards {
+    &__container {}
+
+    &__heading {
+        color: var(--color-text-gray);
+        font-size: 1.5em;
+    }
+
+    &__subheading {
+        color: var(--color-medium-gray);
+        font-size: 1.25em;
+    }
+
+    &__text {
+        color: #454545;
+        font-size: 1em;;
+        color: var(--color-blue);
+    }
+}

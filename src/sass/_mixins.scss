@@ -1,0 +1,160 @@
+@mixin container($width: 1280px) {
+  width: rem($width);
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: rem(20px);
+  padding-right: rem(20px);
+}
+
+@mixin visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+}
+
+@mixin header-padding {
+
+}
+
+@mixin type-header($h: 1) {
+
+  @if ($h == 1) {
+    line-height: 1.02;
+
+    @include poly-fluid-sizing('font-size', (
+      'tiny': rem(52px),
+      'medium': rem(72px)
+    ));
+  }
+
+  @if ($h == 2) {
+    line-height: 1.1;
+
+    @include poly-fluid-sizing('font-size', (
+      'tiny': rem(32px),
+      'medium': rem(50px)
+    ));
+  }
+
+  @if ($h == 3) {
+    line-height: 1.1;
+
+    @include poly-fluid-sizing('font-size', (
+      'tiny': rem(28px),
+      'medium': rem(40px)
+    ));
+  }
+
+  @if ($h == 4) {
+    line-height: 1.2;
+
+    @include poly-fluid-sizing('font-size', (
+      'tiny': rem(24px),
+      'medium': rem(32px)
+    ));
+  }
+
+  @if ($h == 5) {
+    line-height: 1.3;
+
+    @include poly-fluid-sizing('font-size', (
+      'tiny': rem(22px),
+      'medium': rem(24px)
+    ));
+  }
+
+  @if ($h == 6) {
+    font-size: rem(22px);
+    line-height: 1.3;
+  }
+
+  @if ($h == 7) {
+    font-size: rem(18px);
+    line-height: 1.3;
+  }
+}
+
+@mixin type-paragraph($p: 1) {
+
+  @if ($p == 0) {
+    font-size: rem(16px);
+    line-height: 1.4;
+  }
+
+  @if ($p == 0.5) {
+    font-size: rem(18px);
+    line-height: 1.4;
+  }
+
+  @if ($p == 1) {
+    font-size: rem(20px);
+    line-height: 1.4;
+  }
+
+  @if ($p == 1.5) {
+    font-size: rem(24px);
+    line-height: 1.3;
+  }
+
+  @if ($p == 2) {
+    line-height: 1.3;
+
+    @include poly-fluid-sizing('font-size', (
+      'tiny': rem(28px),
+      'medium': rem(32px)
+    ));
+  }
+}
+
+@mixin type-eyebrow {
+  font-size: rem(14px);
+  font-weight: $fw-bold;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+@mixin type-inline-link {
+  color: var(--section-button-primary, #{$color-dark-blue});
+  text-decoration: none;
+  background-image: linear-gradient(to right, #{var(--gradient-green)});
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: left top 1em;
+  transition: background-position .3s;
+
+  &:focus,
+  &:hover {
+    background-position: left top 0;
+    color: $color-dark-blue;
+  }
+}
+
+@mixin bg-dots($dot-color: $color-light-gray) {
+  --dot-color: #{$dot-color};
+  background-image: radial-gradient(circle at rem(4px 4px), var(--dot-color) rem(4px), transparent 0);
+  background-size: rem(20px 24px);
+  background-repeat: space;
+}
+
+@mixin easing-gradient($direction: to top, $color: #000) {
+  background-image: linear-gradient(
+    $direction,
+    rgba($color, 1) 0%,
+    rgba($color, 0.738) 19%,
+    rgba($color, 0.541) 34%,
+    rgba($color, 0.382) 47%,
+    rgba($color, 0.278) 56.5%,
+    rgba($color, 0.194) 65%,
+    rgba($color, 0.126) 73%,
+    rgba($color, 0.075) 80.2%,
+    rgba($color, 0.042) 86.1%,
+    rgba($color, 0.021) 91%,
+    rgba($color, 0.008) 95.2%,
+    rgba($color, 0.002) 98.2%,
+    rgba($color, 0) 100%
+  );
+}

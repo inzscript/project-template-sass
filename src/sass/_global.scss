@@ -1,0 +1,84 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-top: rem(144px);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: $ff-sans;
+  background: $color-lightest-gray;
+  color: $color-text-gray;
+}
+
+#main {
+  flex: 1 1 auto;
+  contain: paint;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+embed,
+iframe,
+img,
+object,
+svg,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+.responsive-embed {
+  position: relative;
+  padding-bottom: 56.25%;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
